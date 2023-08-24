@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ system_name }} | {% block title %}{% endblock %}</title>
+
+    <!-- Google Font: Source Sans Pro -->
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+    <!-- Vendor CSS -->
+    <link rel="stylesheet" href="{{ asset('/dist/css/css.min.css') }}">
+
+    {# Font Awesome #}
+    <script src="https://kit.fontawesome.com/8b7bd8c027.js" crossorigin="anonymous"></script>
+
+    <link rel="icon" type="image/x-icon" href="{{ asset('/img/azure.png') }}">
+</head>
+
+<body class="hold-transition sidebar-mini layout-navbar-fixed">
+<!-- Site wrapper -->
+<div class="wrapper">
+    <!-- Navbar -->
+    {% include '/layout/partials/_top.navbar.html.twig' %}
+    <!-- /.navbar -->
+
+    <!-- Main Sidebar Container -->
+    <aside class="main-sidebar sidebar-dark-primary elevation-4">
+        <!-- Brand Logo -->
+        <a href="{{ path('index') }}" class="brand-link elevation-4">
+            <img src="{{ asset('/img/azure.png') }}" alt="{{ system_name }}" class="brand-image img-circle"
+                 style="opacity: .8">
+            <span class="brand-text font-weight-light">{{ system_name }}</span>
+        </a>
+
+        <!-- Sidebar -->
+        {% include '/layout/partials/_left.navbar.html.twig' %}
+        <!-- /.sidebar -->
+    </aside>
+
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+        <!-- Content Header (Page header) -->
+        <section class="content-header pt-1 pb-1">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <h1>{% block pageTitle %}{% endblock %}</h1>
+                    </div>
+                </div>
+            </div><!-- /.container-fluid -->
+        </section>
+
+        <!-- Main content -->
+        <section class="content">
+            <div class="container-fluid">
+                {% block content %}{% endblock %}
+            </div>
+        </section>
+        <!-- /.content -->
+    </div>
+    <!-- /.content-wrapper -->
+
+    {% include '/layout/partials/_footer.html.twig' %}
+
+</div>
+<!-- ./wrapper -->
+
+<!-- Vendor JS -->
+<script src="https://cdn.tiny.cloud/1/lato47m6perhjhqfz5qri4x1kb6lo2xrbou5wexq2k89a6ur/tinymce/5/tinymce.min.js"
+        referrerpolicy="origin"></script>
+<script src="{{ asset('/dist/js/js.min.js') }}"></script>
+
+</body>
+</html>

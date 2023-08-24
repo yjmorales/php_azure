@@ -1,0 +1,12 @@
+<footer class="main-footer">
+    <div class="w-100 text-right">
+    {% set startDate = '2021' %}
+        {% set nowYear = 'now' | date('Y') %}
+        {% if nowYear == startDate %}
+            Copyright &copy; {{ startDate }}.
+        {% else %}
+            Copyright &copy; {{ startDate }} - {{ nowYear }}.
+        {% endif %}
+    <span>{{ system_name }}</span> | All rights reserved.
+    </div>
+</footer>
