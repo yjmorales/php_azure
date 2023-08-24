@@ -1,0 +1,15 @@
+parameters:
+  # Azure Active Directory parameters
+  azure_active_directory.clientId           : 'AddTheClientIdHere'
+  azure_active_directory.tenantId           : 'AddTheTenantIdHere'
+  azure_active_directory.clientSecret       : 'AddTheClientSecretHere'
+
+  # Azure Blob Storage parameters
+  azure_blob_storage.storageAccountName     : 'AddTheAccountNameHere'
+  azure_blob_storage.defaultEndpointProtocol: 'https'
+  azure_blob_storage.containerName          : 'AddTheContainerNameHere'
+
+  # Azure Service Bus parameters
+  azure_service_bus.namespace               : 'AddTheNamespaceNameHere'
+  azure_service_bus.dew_topic_name          : 'AddTheTopicName'
+  azure_service_bus.dew_sender_queue_prefix : 'AddTheQueueName'

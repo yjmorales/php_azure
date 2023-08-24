@@ -11,9 +11,6 @@
             "config/routes/annotations.yaml"
         ]
     },
-    "nijens/openapi-bundle": {
-        "version": "1.5.0"
-    },
     "phpunit/phpunit": {
         "version": "9.6",
         "recipe": {
@@ -168,18 +165,6 @@
             "config/routes.yaml"
         ]
     },
-    "symfony/security-bundle": {
-        "version": "5.4",
-        "recipe": {
-            "repo": "github.com/symfony/recipes",
-            "branch": "main",
-            "version": "5.3",
-            "ref": "98f1f2b0d635908c2b40f3675da2d23b1a069d30"
-        },
-        "files": [
-            "config/packages/security.yaml"
-        ]
-    },
     "symfony/sendgrid-mailer": {
         "version": "5.4",
         "recipe": {
@@ -213,18 +198,6 @@
         "files": [
             "config/packages/twig.yaml",
             "templates/base.html.twig"
-        ]
-    },
-    "symfony/validator": {
-        "version": "5.4",
-        "recipe": {
-            "repo": "github.com/symfony/recipes",
-            "branch": "main",
-            "version": "5.3",
-            "ref": "c32cfd98f714894c4f128bb99aa2530c1227603c"
-        },
-        "files": [
-            "config/packages/validator.yaml"
         ]
     },
     "symfony/web-profiler-bundle": {
